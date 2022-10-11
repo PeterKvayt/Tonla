@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonla.Api", "src\Tonla.Api\Tonla.Api.csproj", "{0DA9B091-AF32-4A51-8055-AE9691240D05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonla.Core.MusicUploader", "src\Tonla.Core.MusicUploader\Tonla.Core.MusicUploader.csproj", "{6379A231-7B34-4A6E-9F8C-CAFB7252A6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonla.Core.Common", "src\Tonla.Core.Common\Tonla.Core.Common.csproj", "{5556580C-A379-49DE-8391-8E4E9EF830D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{0DA9B091-AF32-4A51-8055-AE9691240D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DA9B091-AF32-4A51-8055-AE9691240D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DA9B091-AF32-4A51-8055-AE9691240D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6379A231-7B34-4A6E-9F8C-CAFB7252A6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6379A231-7B34-4A6E-9F8C-CAFB7252A6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6379A231-7B34-4A6E-9F8C-CAFB7252A6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6379A231-7B34-4A6E-9F8C-CAFB7252A6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5556580C-A379-49DE-8391-8E4E9EF830D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5556580C-A379-49DE-8391-8E4E9EF830D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5556580C-A379-49DE-8391-8E4E9EF830D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5556580C-A379-49DE-8391-8E4E9EF830D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
