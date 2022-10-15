@@ -1,5 +1,7 @@
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Tonla.Core.Common.Models.Requests;
+using Tonla.Core.Common.Models.Responses;
 using Tonla.Core.MusicUploader.Handlers;
 
 namespace Tonla.Api.Controllers;
@@ -16,9 +18,9 @@ public class FileController : ControllerBase
     }
 
     [HttpPost]
-    public async Task Upload([FromServices] IUploadFilesHandler handler, params IFormFile[]? files)
+    public async Task<UploadFilesResponse> Upload([FromServices] IUploadFilesHandler handler, params IFormFile[]? files)
     {
         var cts = new CancellationTokenSource();
-        await handler.ExecuteAsync(new UploadFilesRequest(files), cts.Token);
+        return await handler.ExecuteAsync(new UploadFilesRequest(files), cts.Token);
     }
 }

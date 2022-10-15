@@ -5,7 +5,7 @@ namespace Tonla.Core.Common.Models.Responses;
 
 public abstract record BaseResponse
 {
-    public BaseResponse(ValidationResult result)
+    protected BaseResponse(ValidationResult result)
     {
         foreach (var error in result.Errors)
         {
@@ -13,6 +13,6 @@ public abstract record BaseResponse
             ErrorMessages.Add(error.ErrorCode);
         }
     }
-    
-    public HashSet<string> ErrorMessages = new ();
+
+    public HashSet<string> ErrorMessages { get; } = new();
 }
