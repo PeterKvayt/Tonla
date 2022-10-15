@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Http;
+using Tonla.Core.Common.Models.Requests;
 
 namespace Tonla.Core.MusicUploader.Savers;
 
 public interface IFileSaver
 {
-    Task SaveAsync(IFormFile[] files, CancellationToken token);
+    Task SaveAsync(UploadFilesRequest request, CancellationToken token);
 }
