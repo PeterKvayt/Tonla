@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Http;
+using Tonla.Core.Common.Models.Requests;
 using Tonla.Core.Common.Models.Responses;
 using Tonla.Core.MusicUploader.Savers;
 using Tonla.Core.MusicUploader.Validators;
@@ -7,10 +7,10 @@ namespace Tonla.Core.MusicUploader.Handlers;
 
 public class UploadFilesHandler : IUploadFilesHandler
 {
-    private readonly FilesValidator _validator;
+    private readonly UploadFilesValidator _validator;
     private readonly IFileSaver _fileSaver;
 
-    public UploadFilesHandler(FilesValidator validator, IFileSaver fileSaver)
+    public UploadFilesHandler(UploadFilesValidator validator, IFileSaver fileSaver)
     {
         _validator = validator;
         _fileSaver = fileSaver;
