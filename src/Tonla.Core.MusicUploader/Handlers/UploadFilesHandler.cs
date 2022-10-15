@@ -16,15 +16,15 @@ public class UploadFilesHandler : IUploadFilesHandler
         _fileSaver = fileSaver;
     }
     
-    public async Task<UploadFilesResponse> ExecuteAsync(IFormFile[] files, CancellationToken token)
+    public async Task<UploadFilesResponse> ExecuteAsync(UploadFilesRequest request, CancellationToken token)
     {
-        var validationResult = await _validator.ValidateAsync(files, token);
+        var validationResult = await _validator.ValidateAsync(request, token);
 
         var response = new UploadFilesResponse(validationResult);
         
         if (!validationResult.IsValid) return response;
 
-        await _fileSaver.SaveAsync(files, token);
+        await _fileSaver.SaveAsync(request, token);
 
         return response;
     }
