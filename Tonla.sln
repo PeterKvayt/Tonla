@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonla.Core.MusicUploader", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonla.Core.Common", "src\Tonla.Core.Common\Tonla.Core.Common.csproj", "{5556580C-A379-49DE-8391-8E4E9EF830D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonla.UnitTests", "tests\Tonla.UnitTests\Tonla.UnitTests.csproj", "{CA24A4C9-0040-4137-B3BE-EA1692EB924B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{5556580C-A379-49DE-8391-8E4E9EF830D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5556580C-A379-49DE-8391-8E4E9EF830D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5556580C-A379-49DE-8391-8E4E9EF830D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA24A4C9-0040-4137-B3BE-EA1692EB924B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA24A4C9-0040-4137-B3BE-EA1692EB924B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA24A4C9-0040-4137-B3BE-EA1692EB924B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA24A4C9-0040-4137-B3BE-EA1692EB924B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
