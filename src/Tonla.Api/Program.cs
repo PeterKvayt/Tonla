@@ -10,7 +10,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IUploadFilesHandler, UploadFilesHandler>();
 builder.Services.AddSingleton<IFileSaver, FileSaver>();
-builder.Services.AddSingleton<FilesValidator>();
+builder.Services.AddSingleton<UploadFilesValidator>();
 
 var app = builder.Build();
 
