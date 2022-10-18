@@ -17,7 +17,7 @@ public class FileSaver : IFileSaver
         var tasks = new Task[filesCount];
         for (int i = 0; i < filesCount; i++)
         {
-            var file = request.Files[i];
+            var file = request.Files[i] ?? throw new NullReferenceException("File should not be null during saving.");
             using var stream = new FileStream(Path.Combine(_rootFolderPath, file.FileName), FileMode.Create);
             tasks[i] = file.CopyToAsync(stream, token);
         }

@@ -1,4 +1,3 @@
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Tonla.Core.Common.Models.Requests;
 using Tonla.Core.Common.Models.Responses;
@@ -18,6 +17,7 @@ public class FileController : ControllerBase
     }
 
     [HttpPost]
+    [RequestSizeLimit(50_000_000)]
     public async Task<UploadFilesResponse> Upload([FromServices] IUploadFilesHandler handler, params IFormFile[]? files)
     {
         var cts = new CancellationTokenSource();
